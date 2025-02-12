@@ -8,7 +8,9 @@ namespace ProductVersioning.Helpers
     {
         public static ReleaseType ValidateReleaseType(string releaseTypeStr)
         {
-            if (!Enum.TryParse(releaseTypeStr, true, out ReleaseType releaseType))
+            if (string.IsNullOrEmpty(releaseTypeStr) || 
+                !Enum.TryParse(releaseTypeStr, true, out ReleaseType releaseType) ||
+                !Enum.IsDefined(typeof(ReleaseType), releaseType))
             {
                 throw new ArgumentException("Invalid release type. Use 'Feature' or 'BugFix'");
             }
@@ -18,12 +20,13 @@ namespace ProductVersioning.Helpers
 
         public static Match ValidateVersionFormat(string version)
         {
-            var match = Regex.Match(version, @"^1\.0\.(\d+)\.(\d+)$");
-            if (!match.Success)
+            if (string.IsNullOrWhiteSpace(version) || 
+                !Regex.IsMatch(version, @"^1\.0\.(\d+)\.(\d+)$"))
             {
                 throw new ArgumentException("Invalid version format. Expected format: 1.0.<major>.<minor>");
             }
-            return match;
+
+            return Regex.Match(version, @"^1\.0\.(\d+)\.(\d+)$");
         }
     }
 }

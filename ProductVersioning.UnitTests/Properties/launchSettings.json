@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ProductVersioning.UnitTests": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\GIT\\ProductVersioning\\ProductVersioning.UnitTests"
+    }
+  }
+}

@@ -12,7 +12,7 @@ namespace ProductVersioning
         static void Main(string[] args)
         {
             var versionFileHelper = new VersionFileHelper();
-            VersionService versionService = new VersionService(VersionFilePath, versionFileHelper);
+            IVersionService versionService = new VersionService(VersionFilePath, versionFileHelper);
             string releaseType = args.Length == 1 ? args[0] : GetReleaseType();
 
             try

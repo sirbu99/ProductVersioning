@@ -1,10 +1,9 @@
 ﻿using ProductVersioning.Enums;
 using ProductVersioning.Helpers;
-using System.IO;
 
 namespace ProductVersioning.Services
 {
-    public class VersionService
+    public class VersionService : IVersionService
     {
         private readonly string _versionFilePath;
         private readonly VersionFileHelper _versionFileHelper;
