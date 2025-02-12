@@ -1,0 +1,16 @@
+D:\GIT\ProductVersioning\ProductVersioning\bin\Debug\net5.0\ProductVersioning.exe
+D:\GIT\ProductVersioning\ProductVersioning\bin\Debug\net5.0\ProductVersioning.deps.json
+D:\GIT\ProductVersioning\ProductVersioning\bin\Debug\net5.0\ProductVersioning.runtimeconfig.json
+D:\GIT\ProductVersioning\ProductVersioning\bin\Debug\net5.0\ProductVersioning.runtimeconfig.dev.json
+D:\GIT\ProductVersioning\ProductVersioning\bin\Debug\net5.0\ProductVersioning.dll
+D:\GIT\ProductVersioning\ProductVersioning\bin\Debug\net5.0\ref\ProductVersioning.dll
+D:\GIT\ProductVersioning\ProductVersioning\bin\Debug\net5.0\ProductVersioning.pdb
+D:\GIT\ProductVersioning\ProductVersioning\obj\Debug\net5.0\ProductVersioning.csproj.AssemblyReference.cache
+D:\GIT\ProductVersioning\ProductVersioning\obj\Debug\net5.0\ProductVersioning.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\ProductVersioning\ProductVersioning\obj\Debug\net5.0\ProductVersioning.AssemblyInfoInputs.cache
+D:\GIT\ProductVersioning\ProductVersioning\obj\Debug\net5.0\ProductVersioning.AssemblyInfo.cs
+D:\GIT\ProductVersioning\ProductVersioning\obj\Debug\net5.0\ProductVersioning.csproj.CoreCompileInputs.cache
+D:\GIT\ProductVersioning\ProductVersioning\obj\Debug\net5.0\ProductVersioning.dll
+D:\GIT\ProductVersioning\ProductVersioning\obj\Debug\net5.0\ref\ProductVersioning.dll
+D:\GIT\ProductVersioning\ProductVersioning\obj\Debug\net5.0\ProductVersioning.pdb
+D:\GIT\ProductVersioning\ProductVersioning\obj\Debug\net5.0\ProductVersioning.genruntimeconfig.cache
