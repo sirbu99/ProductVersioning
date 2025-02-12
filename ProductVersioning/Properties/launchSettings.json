@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ProductVersioning": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\GIT\\ProductVersioning\\ProductVersioning"
+    }
+  }
+}
