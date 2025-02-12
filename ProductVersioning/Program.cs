@@ -1,24 +1,17 @@
-﻿using ProductVersioning.Enums;
-using ProductVersioning.Services;
+﻿using ProductVersioning.Services;
 using System;
+using System.IO;
 
 namespace ProductVersioning
 {
     class Program
     {
-        private static readonly string VersionFilePath = "VersionFiles/ProductInfo.cs";
+        private static readonly string VersionFilePath = Path.Combine(Directory.GetCurrentDirectory(), "VersionFiles", "ProductInfo.txt");
 
         static void Main(string[] args)
         {
             VersionService versionService = new VersionService(VersionFilePath);
-            ReleaseType releaseType;
-            string input = args.Length == 1 ? args[0] : GetReleaseType();
-
-            if (!Enum.TryParse(input, true, out releaseType))
-            {
-                Console.WriteLine("Invalid release type. Please use 'Feature' or 'BugFix'.");
-                return;
-            }
+            string releaseType = args.Length == 1 ? args[0] : GetReleaseType();
 
             try
             {
