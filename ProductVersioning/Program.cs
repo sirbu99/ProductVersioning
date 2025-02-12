@@ -1,4 +1,5 @@
-﻿using ProductVersioning.Services;
+﻿using ProductVersioning.Helpers;
+using ProductVersioning.Services;
 using System;
 using System.IO;
 
@@ -10,7 +11,8 @@ namespace ProductVersioning
 
         static void Main(string[] args)
         {
-            VersionService versionService = new VersionService(VersionFilePath);
+            var versionFileHelper = new VersionFileHelper();
+            VersionService versionService = new VersionService(VersionFilePath, versionFileHelper);
             string releaseType = args.Length == 1 ? args[0] : GetReleaseType();
 
             try
